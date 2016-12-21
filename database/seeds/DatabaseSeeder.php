@@ -13,9 +13,9 @@ class DatabaseSeeder extends Seeder
     {
     	//create my account
     	\App\User::create([
-    		'name' => 'Mike Harrison',
-		    'email' => 'mike@nextwebllc.com',
-		    'password' => bcrypt(',aV 5  .@:D'),
+    		'name' => 'Literacy Pro',
+		    'email' => 'laravel.php.engineer@literacypro.com',
+		    'password' => bcrypt('bandsapp'),
 		    'remember_token' => str_random(10)
 	    ]);
 

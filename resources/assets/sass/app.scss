@@ -1,0 +1,74 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+// Variables
+@import "variables";
+
+// Utilities
+@import "utilities";
+
+
+//Vue Material fixes
+.md-list-item{
+  .md-list-item-container{
+    display:flex;
+    &:hover{
+      color:initial;
+    }
+  }
+}
+
+.md-sidenav{
+  .md-toolbar-container{
+    padding-top:15px;
+    flex-direction:column;
+  }
+}
+
+.md-input-container{
+  width:100%;
+}
+
+
+//Bands App Styles
+.spinner-container {
+  width: 100vw;
+  height: calc(100vh - 64px);
+  position: absolute;
+  background: rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.content-container{
+  padding:15px;
+}
+
+.md-table-card{
+  .md-toolbar{
+    .md-input-container{
+      flex:.05 15%;
+    }
+  }
+}
+
+//Select dropdown
+.force-md{
+  .md-select{
+    width: 100%;
+    height: 32px;
+    padding: 0;
+    display: block;
+    border: none;
+    background: none;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-property: font-size;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 32px;
+  }
+}

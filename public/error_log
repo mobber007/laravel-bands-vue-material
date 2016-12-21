@@ -1,0 +1,1 @@
+[17-Dec-2016 20:04:47 EST] PHP Fatal error:  Class 'App\Http\Controllers\Auth' not found in /home/nextwebdev/bands/app/Http/Controllers/BandController.php on line 17

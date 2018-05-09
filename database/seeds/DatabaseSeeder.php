@@ -11,6 +11,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+		//Set the amount of users/bands per user you want here
+		$user_count = 10;
+		$band_count = 15;
+	
     	//create my account
     	\App\User::create([
     		'name' => 'Literacy Pro',
@@ -20,12 +24,12 @@ class DatabaseSeeder extends Seeder
 	    ]);
 
     	//create test data
-	    factory(App\User::class, 10)
+	    factory(App\User::class, $user_count)
 		    ->create()
-		    ->each(function(App\User $user){
+		    ->each(function(App\User $user) use (&$band_count){
 
 			    $user->bands()
-			         ->saveMany(factory(App\Band::class, 240)
+			         ->saveMany(factory(App\Band::class, $band_count)
 				         ->create(['user_id' => $user->id])
 				         ->each(function(App\Band $band){
 

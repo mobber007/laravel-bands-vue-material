@@ -8,9 +8,10 @@ This is an SPA version of the initial bands app, using Vue and Vue Material.
 3. Create .env file and setup DB config or copy .env.example and populate values
 4. Generate the key `php artisan key:generate`
 5. Populate db `php artisan migrate:refresh --seed`
-6. Compile sass and js with `npm run prod`
-7. Setup server to point to `public` folder
-8. Login with admin account (credentials are in seeder file) -> `database/seeds/DatabaseSeeder.php` 
+6. Install node dependencies `npm install`
+7. Compile sass and js with `npm run prod`
+8. Setup server to point to `public` folder
+9. Login with admin account (credentials are in seeder file) -> `database/seeds/DatabaseSeeder.php` 
 
 
 ###Packages
